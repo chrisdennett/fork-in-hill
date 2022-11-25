@@ -4,55 +4,189 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" type="image/x-icon" href="/hill-fork-icon-2.ico">
     <title>Fork in Hill</title>
     <style>
+      /* RESET - src: https://www.joshwcomeau.com/css/custom-css-reset/ */
+      /*
+        1. Use a more-intuitive box-sizing model.
+      */
+      *, *::before, *::after {
+        box-sizing: border-box;
+      }
+      /*
+        2. Remove default margin
+      */
+      * {
+        margin: 0;
+      }
+      /*
+        3. Allow percentage-based heights in the application
+      */
+      html, body {
+        height: 100%;
+      }
+      /*
+        Typographic tweaks!
+        4. Add accessible line-height
+        5. Improve text rendering
+      */
+      body {
+        line-height: 1.5;
+        -webkit-font-smoothing: antialiased;
+      }
+      /*
+        6. Improve media defaults
+      */
+      img, picture, video, canvas, svg {
+        display: block;
+        max-width: 100%;
+      }
+      /*
+        7. Remove built-in form typography styles
+      */
+      input, button, textarea, select {
+        font: inherit;
+      }
+      /*
+        8. Avoid text overflows
+      */
+      p, h1, h2, h3, h4, h5, h6 {
+        overflow-wrap: break-word;
+      }
+      /*
+        9. Create a root stacking context
+      */
+      #root, #__next {
+        isolation: isolate;
+      }
+
+      /* CUSTOM */
       body{
         font-family: tahoma;
-        max-width: 800px;
-        font-size: 1.2em;
+        font-size: 1.5em;
         line-height: 160%;
+      }
+
+      header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      h1{
+        font-family: Consolas, monaco, monospace;
+        font-size: 4em;
+        font-weight: normal;
+        line-height: 2em;
+      }
+
+      h2{
+        margin-top: 1em; 
+        margin-bottom: 0.5em; 
+      }
+
+      p{
+        max-width: 800px;
+        margin-bottom: 0.5em;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+      }
+
+      .gallery{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      footer{
+        background-color: #333;
+        color: white;
+        padding: 3em;
+      }
+
+      footer p{
+        text-align: center;
+        max-width: 100%;
+        margin: 0;
+      }
+      
+      footer a{
+        color: white;
+
       }
     </style>
   </head>
   <body>
 
     <header>
+      <img srcset="/img/small/header.jpg 480w, /img/medium/header.jpg 800w, /img/large/header.jpg 1000w, /img/huge/header.jpg 1500w" src="/img/huge/header.jpg" alt="A giant table fork stuck in a hill">
+      
       <h1>
-        Fork in Hill
+        Hill Fork
       </h1>
     </header>
 
     <main>
-      <p>
-        I've been reading about some proposals for large, expensive landmark
-        artworks in the countryside. I like arty stuff, but I can't help thinking
-        that rather than some earnestly meant arty description of what amounts to
-        waffle of a thing that's a ditch or a block or a grid or anything you have
-        to read about before you understand why it's good.
-      </p>
-      <p>
-        Instead of that just make something really big - like the Angel of the
-        North or the Eiffel Tower or the London Eye. I (and I'm betting a fair few
-        others will be with me on this) like big odd things.
-      </p>
-      <h2>
-        So here's my pitch.
-      </h2>
+      <section>
+        <p>
+          I've been reading about some proposals for large, expensive landmark
+          artworks in the countryside. I like arty stuff, but I can't help thinking
+          that rather than some earnestly meant arty description of what amounts to
+          waffle of a thing that's a ditch or a block or a grid or anything you have
+          to read about before you understand why it's good.
+        </p>
+        
+        <p>
+          Instead of that just make something really big - like the Angel of the
+          North or the Eiffel Tower or the London Eye. I (and I'm betting a fair few
+          others will be with me on this) like big odd things.
+        </p>
+      </section>
 
-      <p>
-        It's a giant fork in a hill.
-      </p>
-      <p>
-        It'd be big. Really big.
-      </p>
-      <p>
-        You're going to be able to stand in between the prongs to have a nice
-        picture taken.
-      </p>
-      <p>
-        It'd include metal from melted down forks donated by locals - probably
-        those odd forks that you probably accidentally nicked from work. Could
-        even be a spoon, who cares. You'll be able to say: hey y'know what, I put
+      <section>
+
+        <h2>
+          So here's my pitch.
+        </h2>
+        
+        <p>
+          It's a giant fork in a hill.
+        </p>
+        <p>
+          It'd be big. Really big.
+        </p>
+        <p>
+          You're going to be able to stand in between the prongs to have a nice
+          picture taken.
+        </p>
+        
+        <div class="gallery">
+          <figure>
+            <img src="/img/small/fork-1.png" alt="A giant table fork stuck in a hill">
+            <figcaption>Dall.e </figcaption>
+          </figure>
+
+          <figure>
+            <img src="/img/small/fork-2.png" alt="A giant table fork stuck in a hill">
+            <figcaption>Dall.e </figcaption>
+          </figure>
+          </div>
+        
+        <p>
+          It'd include metal from melted down forks donated by locals - probably
+          those odd forks that you probably accidentally nicked from work. Could
+          even be a spoon, who cares. You'll be able to say: hey y'know what, I put
         a spoon in the giant hill fork. There will be no deep meaning for adding
         cutlery. I just think it'd be fun for people to have table ware in the
         game.
@@ -78,7 +212,22 @@
         I find it pure like this. Just a fork in a hill for no reason. Come see
         the fork, it's big mind. Really big.
       </p>
-      <h2>SO WHO'S WITH ME?</h2>
+    </section>
+
+    <section>
+
+      <h2>Bring your own meaning</h2>
+      <p>
+        
+      </p>
+    </section>
+     
     </main>
+
+    <footer>
+      <p>Just an idea - by Chris Dennett</p>
+      <p><a href="https://artfly.io">ArtFly.io</a></p>
+      <p>ʘ‿ʘ</p>
+    </footer>
   </body>
 </html>
