@@ -8,29 +8,13 @@
     <link rel="icon" type="image/x-icon" href="/hill-fork-icon-2.ico">
     <title>Fork in Hill</title>
     <style>
-      /* RESET - src: https://www.joshwcomeau.com/css/custom-css-reset/ */
-      *, *::before, *::after {
-        box-sizing: border-box;
-      }
-      * {
-        margin: 0;
-      }
-      html, body {
-        height: 100%;
+      body {
         font-family: tahoma;
         font-size: 1.1em;
         line-height: 160%;
-      }
-      body {
         line-height: 1.5;
         -webkit-font-smoothing: antialiased;
-      }
-      img, picture, video, canvas, svg {
-        display: block;
-        max-width: 100%;
-      }
-      p, h1, h2, h3, h4, h5, h6 {
-        overflow-wrap: break-word;
+        margin: 0;
       }
 
       header{
@@ -53,17 +37,14 @@
         font-size: 2em;
         line-height: 1em;
         font-weight: normal;
-        padding: 0.5em 0;
       }
 
       h2{
         margin-top: 1em; 
-        margin-bottom: 0.5em; 
       }
 
       p, ul{
         max-width: 800px;
-        margin-bottom: 0.5em;
       }
 
       a{
@@ -75,6 +56,11 @@
         display: block;
         height: auto;
         max-width: 100%;
+      }
+
+      .aside{
+        font-style: italic;
+        color: #5d5f61;
       }
 
       .gallery{
@@ -89,7 +75,6 @@
         background: #fff;
         border-radius: 8px;
         box-shadow: 0 4px 8px 0 #0000001a, 0 0 4px 0 #0000001a;
-        cursor: zoom-in;
         margin: 10px;
         padding: 10px;
       }
@@ -109,13 +94,13 @@
         padding: 3em;
       }
 
-      footer p{
+      .footerP{
         text-align: center;
         max-width: 100%;
         margin: 0;
       }
       
-      footer a{
+      .footerA{
         color: white;
       }
 
@@ -127,7 +112,6 @@
       h1{
         font-size: 3.5em;
         line-height: 1em;
-        padding: 1em 0;
       }
     }
     </style>
@@ -136,8 +120,8 @@
 
     <header>
       <img 
-        width="800"
-        height="242"
+        width="1024"
+        height="309"
         alt="A giant table fork stuck in a hill"
         src="/img/medium/header.webp" 
         srcset="
@@ -145,10 +129,6 @@
           /img/medium/header.webp 800w, 
           /img/large/header.webp 1024w
         "
-        sizes=" 
-          (min-width: 960px) 1024px, 
-          100vw 
-        "  
       >
       
       <h1>
@@ -159,7 +139,7 @@
     <main>
       <section>
         <p>
-          I've been reading about some proposals for large, expensive landmark
+          I've seen a few proposals for large, expensive landmark
           artworks in the countryside. I like arty stuff, but I can't help thinking
           that rather than some earnestly meant arty description of what amounts to
           waffle of a thing that's a ditch or a block or a grid or anything you have
@@ -168,8 +148,8 @@
         
         <p>
           Instead of that just make something really big - like the Angel of the
-          North or the Eiffel Tower or the London Eye. I (and I'm betting a fair few
-          others will be with me on this) like big odd things.
+          North or the Eiffel Tower, the London Eye, or a giant rubber band ball (think there's one in the US). I — <span class="aside">and I'm betting a fair few
+          others will be with me on this</span> — like ordinary things, made really BIG!
         </p>
       </section>
 
@@ -184,7 +164,7 @@
             It's a giant fork in a hill.💥
           </li>
           <li>
-            It'd be big. Really big. 💥🤯💥
+            It'll be big. Really big. 💥🤯💥
           </li>
           <li>
             You're going to be able to STAND 👏 INBETWEEN 👏 THE 👏 PRONGS! ✋🎤.
@@ -262,9 +242,9 @@
     </main>
 
     <footer>
-      <p>Just an idea - by Chris Dennett</p>
-      <p><a href="https://artfly.io">ArtFly.io</a></p>
-      <p>ʘ‿ʘ</p>
+      <p class="footerP">Just an idea - by Chris Dennett</p>
+      <p class="footerP"><a class="footerA" href="https://artfly.io">ArtFly.io</a></p>
+      <p class="footerP">ʘ‿ʘ</p>
     </footer>
   </body>
 </html>
