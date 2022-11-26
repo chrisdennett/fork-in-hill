@@ -1,237 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="description" content="An idea for a large landscape artwork by Chris Dennett.">
-    <link rel="icon" type="image/x-icon" href="/hill-fork-icon-2.ico">
-    <title>Fork in Hill</title>
-    <style>
-      body {
-        font-family: tahoma;
-        font-size: 1.1em;
-        line-height: 160%;
-        line-height: 1.5;
-        -webkit-font-smoothing: antialiased;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-      }
 
-      header{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="description" content="An idea for a large landscape artwork by Chris Dennett.">
+  <link rel="icon" type="image/x-icon" href="/hill-fork-icon-2.ico">
+  <title>Fork in Hill</title>
+  <style>
+    body {
+      font-family: tahoma;
+      font-size: 1.1em;
+      line-height: 160%;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
 
-      main{
-        padding: 0 15px;
-        display: flex;
-        flex-direction: column;
-      }
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 15px 20px 15px;
+    }
 
-      section{
-        margin: auto;
-        max-width: 800px;
-      }
+    main {
+      padding: 0 15px;
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      max-width: 800px;
+    }
 
-      h1{
-        font-family: Consolas, monaco, monospace;
-        font-size: 2em;
-        line-height: 1em;
-        font-weight: normal;
-      }
+    h1 {
+      font-family: Consolas, monaco, monospace;
+      font-size: 2em;
+      line-height: 1em;
+      font-weight: normal;
+      margin-bottom: 20px;
+    }
 
-      h2{
-        margin-top: 1em; 
-      }
+    .subheading {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: 0.8em;
+    }
 
-      p, ul{
-        max-width: 800px;
-      }
+    h2 {
+      margin-top: 1em;
+    }
 
-      a{
-        color: rgb(128, 0, 133);
-        font-weight: bold;
-      }
+    p,
+    ul {
+      max-width: 800px;
+    }
 
-      img {
-        display: block;
-        height: auto;
-        max-width: 100%;
-      }
+    a {
+      color: rgb(128, 0, 133);
+      font-weight: bold;
+    }
 
-      .aside{
-        font-style: italic;
-        color: #5d5f61;
-      }
+    img {
+      display: block;
+      height: auto;
+      max-width: 100%;
+    }
 
-      .gallery{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin: 20px 0;
-      }
-      
-      figure{
-        max-width: 320px;
-        background: #fff;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px 0 #0000001a, 0 0 4px 0 #0000001a;
-        margin: 10px;
-        padding: 10px;
-      }
+    .aside {
+      font-style: italic;
+      color: #7c7d7e;
+    }
 
-      figcaption{
-        padding: 5px 0;
-        font-style: italic;
-        color: #5d5f61;
-        font-size: 0.7em;
-        line-height: 1.1em;
-      }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 20px 0;
+    }
 
-      footer{
-        margin-top: 40px;
-        background-color: #242526;
-        color: white;
-        padding: 3em;
-      }
+    figure {
+      max-width: 320px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px 0 #0000001a, 0 0 4px 0 #0000001a;
+      margin: 10px;
+      padding: 10px;
+    }
 
-      .footerP{
-        text-align: center;
-        max-width: 100%;
-        margin: 0;
-      }
-      
-      .footerA{
-        color: white;
-      }
+    figcaption {
+      padding: 5px 0;
+      font-style: italic;
+      color: #5d5f61;
+      font-size: 0.7em;
+      line-height: 1.1em;
+    }
+
+    footer {
+      margin-top: 40px;
+      background-color: #242526;
+      color: white;
+      padding: 3em;
+    }
+
+    .footerP {
+      text-align: center;
+      max-width: 100%;
+      margin: 0;
+    }
+
+    .footerA {
+      color: white;
+    }
 
     @media (min-width: 1000px) {
-      body{
-        font-size: 1.5em;
+      body {
+        font-size: 1.3em;
       }
 
-      h1{
+      h1 {
         font-size: 3.5em;
         line-height: 1em;
       }
     }
-    </style>
-  </head>
-  <body>
-    <header>
-      <img 
-        width="1024"
-        height="309"
-        alt="A giant table fork stuck in a hill"
-        src="/img/medium/header.webp" 
-        srcset="
+  </style>
+</head>
+
+<body>
+  <header>
+    <img width="1024" height="309" alt="A giant table fork stuck in a hill" src="/img/medium/header.webp" srcset="
           /img/small/header.webp 480w, 
           /img/medium/header.webp 800w, 
           /img/large/header.webp 1024w
-        "
-      >
-      <h1>
-        Hill Fork
-      </h1>
-<p>Am antidote to uninspiring high concept public art proposals? </p>
-    </header>
-    <main>
-      <section>
-        <p>
-          I've seen a few proposals for large, expensive landmark
-          artworks in the countryside. I like arty stuff, but I can't help thinking
-          that rather than some earnestly meant arty description of what amounts to
-          waffle of a thing that's a ditch or a block or a grid or anything you have
-          to read about before you understand why it's good.
-        </p>
-        
-        <p>
-          Instead of that just make something really big - like the Angel of the
-          North or the Eiffel Tower, the London Eye, or a giant rubber band ball (think there's one in the US). I — <span class="aside">and I'm betting a fair few
-          others will be with me on this</span> — like ordinary things, made really BIG!
-        </p>
-      </section>
-      <section>
-        <h2>
-          Here's my pitch... 🥁🥁🥁
-        </h2>
-        <ul>
-          <li>
-            It's a giant fork in a hill.💥
-          </li>
-          <li>
-            It'll be big. Really big. 💥🤯💥
-          </li>
-          <li>
-            You're going to be able to STAND 👏 INBETWEEN 👏 THE 👏 PRONGS! ✋🎤.
-          </li>
-          <li> It'll include metal from melted down cutlery donated by local people - probably
-            those odd forks that you probably accidentally nicked from work. Could
-            even be a spoon, who cares. You'll be able to say: "hey y'know what? I put a spoon in the giant fork!" 😂. </li>
-            <li>I reckon it'd be more fun if local people have tableware in the
-          game!🥄🍴</li>
-        </ul>
-        <div class="gallery">
-          <figure>
-            <img width="300" height="300" src="/img/small/fork-1.webp" alt="A drawing of a giant table fork stuck in a hill with a path running through the prongs and people looking up from the base of the hill">
-            <figcaption>Image generated in 10s after asking a friendly AI system called <a href="https://labs.openai.com/about">DALL·E</a></figcaption>
-          </figure>
-          <figure>
-            <img width="300" height="300" src="/img/small/fork-2.webp" alt="a row of people along the top of a small hill around the prongs of a giant fork which is stuck in the grouns.">
-            <figcaption>I wasn't keen on the twisted prongs so I politely asked <a href="https://labs.openai.com/about">DALL·E</a> for another.</figcaption>
-          </figure>
-        </div>
-      </section>
-      <section>
-        <h2>
-          Details
-        </h2>
-        <p>
-          Also Hill Fork (as it will probably get called) sounds a bit like Hill
-          Fort. That's fun too. And of course it'll be in a path... A FORK IN A
-          PATH! COME ON! Comedy gold!
-        </p>
-        <p>
-          It can sound rude so it's mildly controversial. I like my controversies
-          mild. You know, like talking a selfie, you could say Fork Me, this is big!
-          As you gurn from between the prongs. You could stick giant foodstuffs on
-          at different times of the year to invent new rituals - the dancing of the
-          peas, the loading of the sausage, sweetcorn singalongs.
-        </p>
-        <p>
-          And here's the thing. It doesn't mean anything at all. It doesn't
-          represent something. It's just a massive fork stuck in a hill. Because
-          that's simply a fun thing to do in my book. It doesn't need a backstory or
-          an artist to explore anything - no angst or yearning, no immersion in
-          liminal spaces. Bring your own meaning if you like. Or don't. I won't be.
-          I find it pure like this. Just a fork in a hill for no reason. Come see
-          the fork, it's big mind. Really big.
-        </p>
-      </section>
-      <section>
-        <h2>Bring your own meaning</h2>
-        <p>
-          My feeling is simply that giant versions of everyday things are exciting and fun.  That's where the meaning starts and ends, but feel free to bring your own meaning. For example:
-        </p>
-        <ul>
-          <li>Fork Hill represents mankind's insatiable desire to devour our environment in an orgy of consumerism.</li>
-          <li>Using metal reclaimed (or dare I say 'mined') from local cutlery we  return to the earth the very minerals we stole. At the same time branding a reminder of our greed upon our own retina's with a totem of our greed.</li>
-          <li>A new icon to worship in a gluttonous age.  Offerings must be made to the fork</li>
-          <li>It's a giant FORK YOU! to the elitist art world.</li>
-          <li>A reminder in a world of disposable plastic forks that the fork is a mighty and glorious tool to be treated with reverance and awe.</li>
-          <li>Something to do with a giant forky Sundial! </li>
-        </ul>
-        <p>I'll leav it there I'm getting tired! 🥱</p>
-        <p>Who's with me?</p>
-      </section>
-    </main>
-    <footer>
-      <p class="footerP">Just an idea - by Chris Dennett</p>
-      <p class="footerP"><a class="footerA" href="https://artfly.io">ArtFly.io</a></p>
-      <p class="footerP">ʘ‿ʘ</p>
-    </footer>
-  </body>
+        ">
+    <h1>
+      Hill Fork
+    </h1>
+    <p class="subheading">An antidote to HIGH CONCEPT / LOW FUN public art proposals? </p>
+    <p class="subheading aside">Nov 2022</p>
+  </header>
+  <main>
+
+    <p>
+      I've seen a bunch of proposals for large, expensive landmark
+      artworks in the countryside. No doubt earnestly meant, but they amount to pages of impenetrable arty nonsense
+      painting over a disappointingly mundane 'thing' at the end.
+    </p>
+
+    <p>What's wrong with something that's simple to get, easy to like and fun to visit. Think Angel of the North, the
+      Eiffel Tower or the London Eye, but without the budget. Closer in spirit and cost to those giant roadside
+      attractions in the US. <span class="aside">(E.g. Gnome Chomsky in New York - the world's 2nd or 3rd Largest
+        Gnome)</span></p>
+
+    <p>If that last sentence didn't spark a bit a of joy, maybe best not to read on. 😉</p>
+
+
+    <h2>
+      Here's my pitch... 🥁🥁🥁
+    </h2>
+    <ul>
+      <li>
+        It's a giant fork in a hill.💥
+      </li>
+      <li>
+        It'll be big. Really big. 💥🤯💥
+      </li>
+      <li>
+        You're going to be able to STAND 👏 INBETWEEN 👏 THE 👏 PRONGS! ✋🎤.
+      </li>
+      <li> It'll include metal from melted down cutlery donated by local people - probably
+        those odd forks that you probably accidentally nicked from work. Could
+        even be a spoon, who cares. You'll be able to say: "hey y'know what? I put a spoon in the giant fork!" 😂. </li>
+      <li>I reckon it'd be more fun if local people have tableware in the
+        game!🥄🍴</li>
+    </ul>
+    <div class="gallery">
+      <figure>
+        <img width="300" height="300" src="/img/small/fork-1.webp"
+          alt="A drawing of a giant table fork stuck in a hill with a path running through the prongs and people looking up from the base of the hill">
+        <figcaption>Image generated in 10s after asking a friendly AI system called <a
+            href="https://labs.openai.com/about">DALL·E</a></figcaption>
+      </figure>
+      <figure>
+        <img width="300" height="300" src="/img/small/fork-2.webp"
+          alt="a row of people along the top of a small hill around the prongs of a giant fork which is stuck in the grouns.">
+        <figcaption>I wasn't keen on the twisted prongs so I politely asked <a
+            href="https://labs.openai.com/about">DALL·E</a> for another.</figcaption>
+      </figure>
+    </div>
+
+    <p>
+      And here's the thing. It doesn't mean anything at all. It doesn't
+      represent something. It's just a massive fork stuck in a hill. Because
+      that's simply a fun thing to do in my book. It doesn't need a backstory or
+      an artist to explore anything - no angst or yearning, no immersion in
+      liminal spaces. Bring your own meaning if you like. Or don't. I won't be.
+      I find it pure like this. Just a fork in a hill for no reason. Come see
+      the fork, it's big mind. Really big.
+    </p>
+
+    <h2>
+      Pun opportunities
+    </h2>
+    <p>When all is said and done, we are simple folk. I reckon more of us enjoy shouting "FORK ME!" while taking a
+      selfie next to a giant fork, than studiously reading a pdf about why the pile of rubble in front of them is worthy
+      of attention.</p>
+    <p>Too few artists consider the punning opportunities when creating their masterpieces and that is a crying shame..
+    </p>
+    <ul>
+      <li>Hill Fork is a bit like Hill Fort - weak, but it's a start</li>
+      <li>The Fork can straddle a path... It'll be A FORK IN THE PATH... COME ON! Comedy gold!</li>
+      <li>When you arrive you shall declare "Fork Me that's big!". "Fork you?" will be your companion's response
+        enquiring about a photo opportunity. After gurning and picnicking beneath the prongs you'll suggest "Fork off?"
+        and leave knowing you have justly punned.</li>
+    </ul>
+
+    <h2>
+      Rituals
+    </h2>
+    <p>
+      Giant foodstuffs could be place upon the prongs at different times of the year to invent new rituals - the dancing
+      of the peas, the loading of the sausage, sweetcorn sonets.
+    </p>
+
+    <h2>Bring your own meaning</h2>
+    <p>
+      My feeling is simply that giant versions of everyday things are exciting and fun. That's where the meaning starts
+      and ends, but feel free to bring your own meaning. For example:
+    </p>
+    <ul>
+      <li>Fork Hill represents mankind's insatiable desire to devour our environment in an orgy of consumerism.</li>
+      <li>Using metal reclaimed (or dare I say 'mined') from local cutlery we return to the earth the very minerals we
+        stole. At the same time branding a reminder of our greed upon our own retina's with a totem of our greed.</li>
+      <li>A call to arms for all of us to embrace our childhood selves and to ask why, why, why more often?</li>
+      <li>A new icon to worship in a gluttonous age. Offerings must be made to the fork, or your fast food emporiums
+        will run dry of grease and stodge </li>
+      <li>It's a giant FORK YOU! to the elitist art world.</li>
+      <li>A reminder in a world of disposable plastic forks that the fork is a mighty and glorious tool to be treated
+        with reverance and awe.</li>
+      <li>Something to do with a giant forky Sundial! </li>
+    </ul>
+    <p>I'll leave it there I'm getting tired! 🥱</p>
+
+    <p>Who's with me?</p>
+  </main>
+  <footer>
+    <p class="footerP">Just an idea - by Chris Dennett</p>
+    <p class="footerP"><a class="footerA" href="https://artfly.io">ArtFly.io</a></p>
+    <p class="footerP">📧<a class="footerA" href="mailto:chrisdennett@gmail.com">chrisdennett@gmail.com</a></p>
+    <p class="footerP">ʘ‿ʘ</p>
+  </footer>
+</body>
+
 </html>
